@@ -1,0 +1,12 @@
+1. To see who can teach at a specific time of a day, I need to keep track of when one teacher is free.
+2. I will take an boolean array of size 30 as 30 can be the max. working hour for a teacher. Day 1 : 5 and period 1 : 6, if a techer is teaching some classes to a specific time make Day * Period of tat teacher's visited array to true
+
+Extreme Bruteforce for assigning the teachers to each class
+3. Take a map for each class where the key is the subject, and the value is no. of hours the course has been taught
+4. Go to a class and take the subject if the value of that subject less than no. of periods required and check 
+    if any teacher of that subject is free or not, if free mark the working hour of that teacher equals to true and increase the taught hour for that subject +1
+    else goto the next subject and repeat the above if conditions
+repeat the above conditions, until the values of each subject in the map not equal to specified no. of periods required.
+
+repeat this processes for each class until all the values in course map reach to specified no. of hours in class_subject_periods
+
